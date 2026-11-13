@@ -1,161 +1,30 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="互联说，分享链接你我。">
-  <meta name="theme-color" content="#f5f5f7">
-  <title>互联说</title>
+  <title>LINKS, SHARED</title>
   <style>
-    :root {
-      color-scheme: light;
-      --ink: #1d1d1f;
-      --muted: #6e6e73;
-      --blue: #0071e3;
-      --blue-dark: #0066cc;
-      --line: rgba(0, 0, 0, .08);
-      --surface: rgba(255, 255, 255, .76);
-    }
-
     * { box-sizing: border-box; }
-
-    html { min-height: 100%; }
-
     body {
+      display: grid;
+      place-items: center;
       min-height: 100vh;
       margin: 0;
-      color: var(--ink);
+      color: #1d1d1f;
       background: #f5f5f7;
-      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
-      -webkit-font-smoothing: antialiased;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", Arial, sans-serif;
     }
-
-    .page {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      padding: 28px clamp(24px, 5vw, 72px) 22px;
-    }
-
-    header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      max-width: 1160px;
-      width: 100%;
-      margin: 0 auto;
-    }
-
-    .brand {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      color: var(--ink);
-      font-size: 17px;
-      font-weight: 600;
-      letter-spacing: .01em;
-      text-decoration: none;
-    }
-
-    .brand-mark {
-      width: 30px;
-      height: 30px;
-      display: grid;
-      place-items: center;
-      border-radius: 9px;
-      color: #fff;
-      background: var(--ink);
-      font-size: 15px;
-      font-weight: 700;
-    }
-
-    main {
-      flex: 1;
-      display: grid;
-      place-items: center;
-      width: 100%;
-      padding: 64px 0 86px;
-    }
-
-    .hero {
-      width: min(100%, 820px);
-      text-align: center;
-    }
-
-    .eyebrow {
-      margin: 0 0 18px;
-      color: var(--blue);
-      font-size: 14px;
-      font-weight: 600;
-      letter-spacing: .08em;
-    }
-
     h1 {
       margin: 0;
-      color: #6e6e73;
-      font-size: clamp(28px, 4vw, 44px);
+      font-size: clamp(2rem, 5vw, 3rem);
       font-weight: 700;
-      letter-spacing: -.055em;
-      line-height: 1.08;
-    }
-
-    .intro {
-      max-width: 520px;
-      margin: 22px auto 34px;
-      color: var(--muted);
-      font-size: clamp(18px, 2.5vw, 23px);
-      letter-spacing: -.02em;
-      line-height: 1.55;
-    }
-
-    .tip {
-      margin: 14px 0 0;
-      color: var(--muted);
-      font-size: 13px;
-    }
-
-    footer {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      margin: 0 auto;
-    }
-
-    footer a {
-      color: #86868b;
-      font-size: 12px;
-      text-decoration: none;
-      transition: color .2s ease;
-    }
-
-    footer a:hover { color: var(--ink); }
-
-    @media (max-width: 560px) {
-      .page { padding: 22px 18px 20px; }
-      main { padding: 44px 0 64px; }
+      letter-spacing: 0;
+      text-align: center;
     }
   </style>
 </head>
 <body>
-  <div class="page">
-    <header>
-      <a class="brand" href="./" aria-label="互联说首页">
-        <span class="brand-mark" aria-hidden="true">互</span>
-        <span>互联说</span>
-      </a>
-    </header>
-
-    <main>
-      <section class="hero" aria-labelledby="page-title">
-        <p class="eyebrow">LINKS, SHARED</p>
-        <h1 id="page-title">让分享，自然而然</h1>
-      </section>
-    </main>
-
-    <footer>
-      <a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer">沪ICP备2026028370号-1</a>
-    </footer>
-  </div>
-
+  <h1>LINKS, SHARED</h1>
 </body>
 </html>
